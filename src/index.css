@@ -1,0 +1,165 @@
+/* ============================================================================================== 
+Nick Mkrtchyan
+https://www.facebook.com/sonick.pk
+http://www.Mkrtchyan.zz.mu
+================================================================================================= */
+@font-face {
+  font-family: transformers;
+  src: url('/Starjedi.ttf') format('truetype');
+}
+
+body {
+  font-family: transformers, sans-serif;
+  font-size: 2em;
+}
+
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+  from {background-position: 0;}
+  to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+
+.stars {
+background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+z-index:0;
+}
+
+.twinkling{
+background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+z-index:1;
+
+-moz-animation:move-twink-back 200s linear infinite;
+-ms-animation:move-twink-back 200s linear infinite;
+-o-animation:move-twink-back 200s linear infinite;
+-webkit-animation:move-twink-back 200s linear infinite;
+animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index:3;
+
+-moz-animation:move-clouds-back 200s linear infinite;
+-ms-animation:move-clouds-back 200s linear infinite;
+-o-animation:move-clouds-back 200s linear infinite;
+-webkit-animation:move-clouds-back 200s linear infinite;
+animation:move-clouds-back 200s linear infinite;
+}
+
+.current-data {
+  z-index: 1000;
+  color: white;
+
+}
+
+.dynamic-table {
+  z-index: 1000;
+  color: white;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  border-collapse: collapse;
+  border-bottom: 1px solid rgba(252, 252, 252, 0.25);
+}
+
+thead {
+  border-collapse: collapse;
+  border: 1px solid rgba(252, 252, 252, 0.25);
+  border-bottom: 1px solid rgba(36, 32, 56, 0.2);
+}
+thead th {
+  background: rgba(36, 32, 56, 0.4);
+  color: #F7ECE1;
+  font-weight: normal;
+  padding: 10px 12px 10px 12px;
+  font-size: 22px;
+  border: 1px solid rgba(252, 252, 252, 0.25);
+  border-bottom: 1px solid rgba(36, 32, 56, 0.2);
+}
+
+.dynamic-table {
+  margin: 25px auto;
+}
+
+
+.dynamic-table td {
+  padding: 5px 10px 5px 10px;
+  color: #242038;
+  border-right: 1px solid rgba(36, 32, 56, 0.2);
+  border-bottom: 1px solid rgba(36, 32, 56, 0.2);
+  font-size: 20px;
+  background: rgba(233, 235, 158, 0.85);
+}
+.dynamic-table td:hover {
+  background: #50C9CE;
+}
+
+.pure-table {
+  margin: 25px auto;
+}
+
+.pure-table td {
+  background: rgba(36, 32, 56, 0.4);
+  font-weight: normal;
+  padding: 10px 12px 10px 12px;
+  font-size: 22px;
+  border: 1px solid rgba(252, 252, 252, 0.25);
+  border-bottom: 1px solid rgba(36, 32, 56, 0.2);
+}
+.pure-table td:hover {
+  background: #50C9CE;
+}
+
+.data-point {
+  color: rgb(18, 140, 177);
+}
